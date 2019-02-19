@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Űrlap</title>
+</head><!DOCTYPE html>
+<html>
+<head>
+<title>Telekocsi Űrlap</title>
 </head>
-<body>
+<body style="background-color:grey;">
 <form action="parser.php" method="post">
   <div>
+  <h1>
     <label for="lastname">Vezetéknév: </label>
     <input type="text" name="lastname" id="lastname">
     <br>
     <label for="firstname">Keresztnév: </label>
     <input type="text" name="firstname" id="firstname">
+ 
     <br>
     <label for="email">E-mail: </label>
     <input type="text" name="email" id="email">
+     <br>
+    <label for="pass">Jelszó: </label>
+    <input type="password" name="pass" id="pass">
+  
     <br>
+    <input type="radio" id="ferfi" name="nem" value="Férfi">
+    <label for="ferfi">Férfi</label>
+    <br>
+    <input type="radio" id="no" name="nem" value="Nő">
+    <label for="no">Nő</label>
+    <br>
+    <label for="autok">Milyen típusú autója van?</label>
+    <br>
+    <select id="autok" name="autok">
+      <optgroup label="Audi">
+      <option value="A1">A1</option>
+      <option value="A2">A2</option>
+       <option value="A3">A3</option>
+      <option value="A4">A4</option>
+      </optgroup>
+       <optgroup label="BMW">
+      <option value="114i">144i</option>
+      <option value="116i">116i</option>
+       <option value="118i">118i</option>
+      <option value="120i">120i</option>
+      </optgroup>
+      
+     <br>
     <input type="submit" value="Elküld">
   </div>
 </form>
+</h1>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
 
 </body>
 </html>
